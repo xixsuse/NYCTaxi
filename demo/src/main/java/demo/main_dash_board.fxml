@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="825.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.MainDashBoardController">
+   <children>
+      <BarChart fx:id="tripsNoChart" animated="false" layoutX="574.0" layoutY="7.0" prefHeight="313.0" prefWidth="547.0" title="No of trip for each taxi Type">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="b1" layoutX="885.0" layoutY="680.0" mnemonicParsing="false" onAction="#updateData" text="view changes" />
+      <LineChart fx:id="averagTripsPerDayChart" animated="false" prefHeight="293.0" prefWidth="509.0" title="Average trips per day">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <BarChart fx:id="minutesBC" animated="false" layoutX="574.0" layoutY="296.0" prefHeight="313.0" prefWidth="547.0" title="Minutes per trip for each taxi type">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="dropOffBC" animated="false" layoutX="14.0" layoutY="277.0" prefHeight="255.0" prefWidth="426.0" title="No Drop off location">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="pickUpBC" animated="false" layoutX="20.0" layoutY="524.0" prefHeight="293.0" prefWidth="560.0" title="PicK ups from Madison,Brooklyn">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
